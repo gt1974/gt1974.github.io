@@ -367,3 +367,152 @@ a img:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+.ro{
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.rotatingText-adjective {
+  font-size: 50px;
+  font-style: normal;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+}
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 1000px){
+  .container{
+    scroll-snap-type: none;
+  }
+  section{
+    height: 150vh;
+  }
+  section .name{
+    font-size: 50px;
+  }
+  .beginning{
+    padding-bottom: 20px;
+  }
+  section h1{
+    font-size: 50px;
+  }
+  .skills ul{
+    font-size: 19px;
+  }
+  .basic ul{
+    font-size: 19px;
+  }
+  .facts h3{
+    font-size: 20px;
+  }
+  .description{
+    width: 100%;
+  }
+  section .blurb{
+    flex-direction: column;
+  }
+  .sect{
+    flex-direction: column;
+  }
+  #home{
+    height: 75vh;
+  }
+  .graphic{
+    padding-top: 30px;
+  }
+
+  #projects{
+    height: 270vh;
+  }
+  .pics{
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .mini{
+    height:50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  section .texts{
+    width: 80%;
+  }
+  .end{
+    flex-direction: column;
+  }
+  .gord{
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .larger{
+    width: 50px;
+    height: 50px;
+  }
+  #blurb{
+    width: 80%;
+  }
+  #reach{
+    padding-top: 50px;
+    padding-left: 0;
+    text-align: center;
+  }
+  section .me{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 50px;
+  }
+}
