@@ -26,7 +26,6 @@ a:hover {
   overflow-y: scroll;
   scroll-behavior: smooth;
   /*change later*/
-  scroll-snap-type: y mandatory;
 
 }
 .navbar{
