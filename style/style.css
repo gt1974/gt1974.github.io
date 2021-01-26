@@ -340,6 +340,14 @@ section .texts p{
   justify-content: center;
   padding-top: 10%
 }
+video{
+  width: 640px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+
+}
 .object {
   -webkit-animation: action 1s infinite  alternate;
   animation: action 1s infinite  alternate;
@@ -514,6 +522,10 @@ a img:hover {
     padding-right: 0px;
     padding-top: 50px;
   }
+  video{
+    width: 320px;
+    height: 180px;
+  }
 }
 @media (max-width: 600px){
   body{
@@ -646,5 +658,9 @@ a img:hover {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  video{
+    width: 320px;
+    height: 180px;
   }
 }
