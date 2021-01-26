@@ -160,6 +160,14 @@ section p{
   object-fit: cover;
   box-shadow: 20px 15px rgb(0, 51, 102);
 }
+#oval{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
 section .me{
   display: flex;
   flex-direction: column-reverse;
@@ -498,6 +506,16 @@ a img:hover {
   .gord{
     width: 350px;
     height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #oval{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
   }
@@ -622,6 +640,16 @@ a img:hover {
   .gord{
     width: 300px;
     height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #oval{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
   }
