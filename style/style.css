@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
 }
-
+#spotify{
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body{
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
